@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.doze;
+package co.aospa.settings.device.doze;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.UserHandle;
 import android.util.Log;
 
-import org.lineageos.settings.device.SensorAction;
+import co.aospa.settings.device.SensorAction;
 
 public class DozePulseAction implements SensorAction, ScreenStateNotifier {
     private static final String TAG = "MotoActions";

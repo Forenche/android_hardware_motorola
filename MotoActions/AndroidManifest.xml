@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.settings.device"
+    package="co.aospa.settings.device"
     android:sharedUserId="android.uid.system"
     >
 
-    <original-package android:name="com.cyanogenmod.settings.device" />
+    <original-package android:name="co.aospa.settings.device" />
 
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
@@ -20,7 +20,7 @@
         android:persistent="true">
 
         <receiver
-            android:name="org.lineageos.settings.device.BootCompletedReceiver"
+            android:name="co.aospa.settings.device.BootCompletedReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="org.lineageos.settings.device.MotoActionsService"
+        <service android:name="co.aospa.settings.device.MotoActionsService"
             android:permission="MotoActionsService"
             android:exported="false">
         </service>
@@ -39,7 +39,7 @@
             android:label="@string/ambient_display_gestures_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
+                <action android:name="co.aospa.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package co.aospa.settings.device;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -26,15 +26,15 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.util.Log;
 
-import org.lineageos.settings.device.actions.ChopChopSensor;
-import org.lineageos.settings.device.actions.FlipToMute;
-import org.lineageos.settings.device.actions.LiftToSilence;
-import org.lineageos.settings.device.actions.ProximitySilencer;
-import org.lineageos.settings.device.actions.UpdatedStateNotifier;
-import org.lineageos.settings.device.doze.DozePulseAction;
-import org.lineageos.settings.device.doze.FlatUpSensor;
-import org.lineageos.settings.device.doze.ScreenStateNotifier;
-import org.lineageos.settings.device.doze.StowSensor;
+import co.aospa.settings.device.actions.ChopChopSensor;
+import co.aospa.settings.device.actions.FlipToMute;
+import co.aospa.settings.device.actions.LiftToSilence;
+import co.aospa.settings.device.actions.ProximitySilencer;
+import co.aospa.settings.device.actions.UpdatedStateNotifier;
+import co.aospa.settings.device.doze.DozePulseAction;
+import co.aospa.settings.device.doze.FlatUpSensor;
+import co.aospa.settings.device.doze.ScreenStateNotifier;
+import co.aospa.settings.device.doze.StowSensor;
 
 import java.util.LinkedList;
 import java.util.List;

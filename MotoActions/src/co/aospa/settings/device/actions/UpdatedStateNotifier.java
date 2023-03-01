@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.actions;
+package co.aospa.settings.device.actions;
 
 public interface UpdatedStateNotifier {
     void updateState();

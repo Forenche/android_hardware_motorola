@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.doze;
+package co.aospa.settings.device.doze;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.util.Log;
 
-import org.lineageos.settings.device.MotoActionsSettings;
-import org.lineageos.settings.device.SensorAction;
-import org.lineageos.settings.device.SensorHelper;
+import co.aospa.settings.device.MotoActionsSettings;
+import co.aospa.settings.device.SensorAction;
+import co.aospa.settings.device.SensorHelper;
 
 public class StowSensor implements ScreenStateNotifier, SensorEventListener {
     private static final String TAG = "MotoActions-StowSensor";

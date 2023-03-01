@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 The CyanogenMod Project
+ * Copyright (c) 2016 The CyanogenMod Project
  * Copyright (c) 2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,21 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.doze;
+package co.aospa.settings.device;
 
-public interface ScreenStateNotifier {
-    void screenTurnedOn();
+import android.os.Bundle;
 
-    void screenTurnedOff();
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.R;
+
+public class ActionsPreferenceActivity extends CollapsingToolbarBaseActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content_frame, new ActionsPreferenceFragment())
+                .commit();
+    }
 }

@@ -1,4 +1,4 @@
--keep class org.lineageos.MotoActions.* {
+-keep class co.aospa.MotoActions.* {
   *;
 }
 
