@@ -120,7 +120,8 @@ class SysfsPollingOneShotSensor : public OneShotSensor {
     int mPollFd;
 };
 
-const std::string kTsPath = "/sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/";
+const std::string kTsPath =
+    "/sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/";
 
 const std::string kTsDoubleTapPressedPath = kTsPath + "double_tap_pressed";
 const std::string kTsDoubleTapEnabledPath = kTsPath + "double_tap_enabled";
@@ -141,8 +142,8 @@ class UdfpsSensor : public SysfsPollingOneShotSensor {
   public:
     UdfpsSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
         : SysfsPollingOneShotSensor(
-              sensorHandle, callback, kTsUdfpsPressedPath, kTsUdfpsEnabledPath,
-              "UDFPS Sensor", "co.aospa.sensor.udfps",
+              sensorHandle, callback, kTsUdfpsPressedPath, kTsUdfpsEnabledPath, "UDFPS Sensor",
+              "co.aospa.sensor.udfps",
               static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 2)) {}
 };
 
