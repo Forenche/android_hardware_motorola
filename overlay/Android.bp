@@ -9,3 +9,11 @@ phony {
         "FrameworksResMotoCommon",
     ]
 }
+
+phony {
+    name: "MotoUDFPSOverlay",
+    required: [
+        "MotoFrameworksResUDFPS",
+        "MotoSystemUIResUDFPS",
+    ]
+}
