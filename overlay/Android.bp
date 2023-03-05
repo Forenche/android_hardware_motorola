@@ -17,3 +17,11 @@ phony {
         "MotoSystemUIResUDFPS",
     ]
 }
+
+phony {
+    name: "MotoSensorsOverlay",
+    required: [
+        "MotoFrameworksResSensors",
+        "MotoSystemUIResSensors",
+    ]
+}
