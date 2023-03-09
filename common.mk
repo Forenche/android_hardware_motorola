@@ -6,6 +6,10 @@
 
 HARDWARE_PATH := hardware/motorola
 
+# Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(HARDWARE_PATH)
+
 # Overlay
 PRODUCT_PACKAGES += \
     MotoCommonOverlay
