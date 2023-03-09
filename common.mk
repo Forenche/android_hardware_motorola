@@ -19,3 +19,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MotoUDFPSOverlay
 endif
+
+ifeq ($(TARGET_BUILDS_OSS_SENSORS_SUBHAL),true)
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(HARDWARE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+PRODUCT_PACKAGES += \
+    sensors.motorola
+
+# Sensors Overlays
+PRODUCT_PACKAGES += \
+    MotoSensorsOverlay
+endif
