@@ -125,6 +125,8 @@ const std::string kTsPath =
 
 const std::string kTsDoubleTapPressedPath = kTsPath + "double_tap_pressed";
 const std::string kTsDoubleTapEnabledPath = kTsPath + "double_tap_enabled";
+const std::string kTsSingleTapPressedPath = kTsPath + "single_tap_pressed";
+const std::string kTsSingleTapEnabledPath = kTsPath + "single_tap_enabled";
 
 class DoubleTapSensor : public SysfsPollingOneShotSensor {
   public:
@@ -132,6 +134,15 @@ class DoubleTapSensor : public SysfsPollingOneShotSensor {
         : SysfsPollingOneShotSensor(
               sensorHandle, callback, kTsDoubleTapPressedPath, kTsDoubleTapEnabledPath,
               "Double Tap Sensor", "co.aospa.sensor.double_tap",
+              static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
+};
+
+class SingleTapSensor : public SysfsPollingOneShotSensor {
+  public:
+    SingleTapSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
+        : SysfsPollingOneShotSensor(
+              sensorHandle, callback, kTsSingleTapPressedPath, kTsSingleTapEnabledPath,
+              "Single Tap Sensor", "org.lineageos.sensor.single_tap",
               static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
 };
 
