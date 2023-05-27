@@ -121,7 +121,7 @@ class SysfsPollingOneShotSensor : public OneShotSensor {
 };
 
 const std::string kTsPath =
-    "/sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/";
+    "/sys/devices/virtual/touchscreen/NVT-ts/";
 
 const std::string kTsDoubleTapPressedPath = kTsPath + "double_tap_pressed";
 const std::string kTsDoubleTapEnabledPath = kTsPath + "double_tap_enabled";
