@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.device;
+package org.lineageos.settings.settings.device;
 
 import android.os.Bundle;
 

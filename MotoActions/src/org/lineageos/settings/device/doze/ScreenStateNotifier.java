@@ -15,8 +15,10 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.device;
+package org.lineageos.settings.settings.device.doze;
 
-public interface SensorAction {
-    void action();
+public interface ScreenStateNotifier {
+    void screenTurnedOn();
+
+    void screenTurnedOff();
 }

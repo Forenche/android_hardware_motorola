@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.device.doze;
+package org.lineageos.settings.settings.device.doze;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.util.Log;
 
-import co.aospa.settings.device.MotoActionsSettings;
-import co.aospa.settings.device.SensorAction;
-import co.aospa.settings.device.SensorHelper;
+import org.lineageos.settings.settings.device.MotoActionsSettings;
+import org.lineageos.settings.settings.device.SensorAction;
+import org.lineageos.settings.settings.device.SensorHelper;
 
 public class FlatUpSensor implements ScreenStateNotifier {
     private static final String TAG = "MotoActions-FlatUpSensor";

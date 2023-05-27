@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.device.actions;
+package org.lineageos.settings.settings.device.actions;
 
 import static android.telephony.TelephonyManager.CALL_STATE_RINGING;
 
@@ -28,8 +28,8 @@ import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import co.aospa.settings.device.MotoActionsSettings;
-import co.aospa.settings.device.SensorHelper;
+import org.lineageos.settings.settings.device.MotoActionsSettings;
+import org.lineageos.settings.settings.device.SensorHelper;
 
 public class ProximitySilencer extends PhoneStateListener implements SensorEventListener,
         UpdatedStateNotifier {
